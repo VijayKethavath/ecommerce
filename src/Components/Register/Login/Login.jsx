@@ -11,7 +11,7 @@ function Login(){
  async function onlogin(event){
   event.preventDefault()
       try {
-        let checkemail = await fetch(`http://localhost:5000/user?email=${email}`)
+        let checkemail = await fetch(`https://ecommerce-1-xd2h.onrender.com/user?email=${email}`)
         let emaildata = await checkemail.json()
         console.log(emaildata);
         

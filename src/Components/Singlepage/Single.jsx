@@ -39,7 +39,7 @@ async function onCart(data){
        user_Id: localStorage.getItem("userId")
     }
 
-    let res = await fetch("http://localhost:5000/cart",{
+    let res = await fetch("https://ecommerce-1-xd2h.onrender.com/cart",{
       method:"POST",
       headers:{
         "Content-Type":"application/json"

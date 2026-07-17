@@ -19,7 +19,7 @@ function Cart(){
         let userId = localStorage.getItem("userId")
         console.log(userId);
         
-        let res = await fetch(`http://localhost:5000/cart?user_Id=${userId}`)
+        let res = await fetch(`https://ecommerce-1-xd2h.onrender.com/cart?user_Id=${userId}`)
         let jsonData = await res.json();
         console.log(jsonData);
         
@@ -38,7 +38,7 @@ function Cart(){
 
   async function deleteCart(id){
     try {
-      let res = await fetch(`http://localhost:5000/cart/${id}`,{
+      let res = await fetch(`https://ecommerce-1-xd2h.onrender.com/cart/${id}`,{
       method:"DELETE"
       
     })
@@ -52,7 +52,7 @@ function Cart(){
     try {
 
       for(let item of cart){
-        await fetch(`http://localhost:5000/cart/${item.id}`,{
+        await fetch(`https://ecommerce-1-xd2h.onrender.com/cart/${item.id}`,{
           method:"DELETE"
         })
       }

@@ -15,7 +15,7 @@ function Register(){
         console.log(newuser);
         
 
-        let checkemail = await  fetch(`http://localhost:5000/user?email=${email}`)
+        let checkemail = await  fetch(`https://ecommerce-1-xd2h.onrender.com/user?email=${email}`)
         let emaildata = await checkemail.json();
 
         if(emaildata.length!=0){
@@ -24,7 +24,7 @@ function Register(){
         }
         seterror(false)
 
-        let res = await fetch("http://localhost:5000/user",{
+        let res = await fetch("https://ecommerce-1-xd2h.onrender.com/user",{
           method:"POST",
           headers:{
             "Content-Type":"application/json"
