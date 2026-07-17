@@ -1,0 +1,120 @@
+.proceedContainer{
+    min-height:100vh;
+    background:#f4f6fb;
+}
+
+.proceedCard{
+
+    width:500px;
+    max-width:90%;
+
+    margin:70px auto;
+
+    background:#fff;
+
+    border-radius:20px;
+
+    padding:50px 40px;
+
+    text-align:center;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.15);
+}
+
+.successIcon{
+
+    width:110px;
+    height:110px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    background:#22c55e;
+
+    color:white;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:55px;
+
+    margin-bottom:30px;
+}
+
+.proceedCard h1{
+
+    font-size:34px;
+    color:#111827;
+    margin-bottom:15px;
+}
+
+.thanks{
+
+    color:#6b7280;
+    font-size:18px;
+
+    margin-bottom:35px;
+}
+
+.orderDetails{
+
+    background:#f9fafb;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    margin-bottom:30px;
+}
+
+.orderDetails h3{
+
+    color:#555;
+    margin-bottom:10px;
+}
+
+.orderDetails h2{
+
+    color:#16a34a;
+    font-size:38px;
+}
+
+.delivery{
+
+    color:#444;
+    line-height:1.7;
+
+    margin-bottom:35px;
+}
+
+.homeBtn{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#111827;
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.homeBtn:hover{
+
+    background:#2563eb;
+
+    transform:translateY(-2px);
+}

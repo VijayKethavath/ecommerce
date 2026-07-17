@@ -1,0 +1,168 @@
+/* Background */
+.singlecontainer{
+    min-height: 100vh;
+    background: #f5f6fa;
+}
+
+/* Main Section */
+.singlesub{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+}
+
+/* Product Card */
+.singlecart{
+    width: 1100px;
+    background: #fff;
+    display: flex;
+    gap: 50px;
+    padding: 40px;
+    border-radius: 18px;
+    box-shadow: 0 10px 35px rgba(0,0,0,.12);
+}
+
+/* Left Image */
+.singleimg{
+    width: 380px;
+    height: 420px;
+    object-fit: contain;
+    border-radius: 12px;
+    background: #fafafa;
+    padding: 20px;
+    transition: .3s;
+}
+
+.singleimg:hover{
+    transform: scale(1.05);
+}
+
+/* Right Side */
+.singleDetails{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Title */
+.singletitle{
+    font-size: 34px;
+    color: #111827;
+    margin-bottom: 18px;
+    line-height: 1.4;
+}
+
+/* Description */
+.singleDes{
+    color: #666;
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 25px;
+}
+
+/* Rating Badge */
+.singlerate{
+    display: inline-block;
+    background: #16a34a;
+    color: white;
+    width: fit-content;
+    padding: 8px 18px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Rating Count */
+.singlecount{
+    color: #555;
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+
+/* Price */
+.singleprice{
+    color: #e63946;
+    font-size: 42px;
+    margin-bottom: 35px;
+}
+
+/* Button Container */
+.btnGroup{
+    display: flex;
+    gap: 18px;
+}
+
+/* Add Cart Button */
+.cartbtn{
+    background: #111827;
+    color: white;
+    border: none;
+    padding: 15px 35px;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.cartbtn:hover{
+    background: #2563eb;
+    transform: translateY(-2px);
+}
+
+/* Go Back */
+.goback{
+    background: white;
+    color: #111827;
+    border: 2px solid #111827;
+    padding: 15px 35px;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.goback:hover{
+    background: #111827;
+    color: white;
+}
+
+/* Loading */
+.load{
+    color: #2563eb;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* Responsive */
+@media(max-width:900px){
+
+.singlecart{
+    flex-direction: column;
+    width:95%;
+}
+
+.singleimg{
+    width:100%;
+    height:320px;
+}
+
+.singletitle{
+    font-size:28px;
+}
+
+.singleprice{
+    font-size:34px;
+}
+
+.btnGroup{
+    flex-direction:column;
+}
+
+.cartbtn,
+.goback{
+    width:100%;
+}
+
+}

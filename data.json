@@ -1,0 +1,12 @@
+{
+  "user": [
+    {
+      "id": "a4e5",
+      "user": "a",
+      "email": "a@gmail.com",
+      "password": "a"
+    }
+  ],
+  "cart": [],
+  "$schema": "./node_modules/json-server/schema.json"
+}
